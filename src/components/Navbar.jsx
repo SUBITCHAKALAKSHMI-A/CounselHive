@@ -3,10 +3,10 @@ import { FaUserCircle } from 'react-icons/fa'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm py-3">
       <div className="container">
         <Link className="navbar-brand fw-bold text-primary" to="/">
-          EduGuide
+          CounselHive
         </Link>
         
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
