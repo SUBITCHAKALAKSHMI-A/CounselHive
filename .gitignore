@@ -22,3 +22,34 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Node modules (huge folder)
+node_modules/
+
+# Log files
+*.log
+
+# Build/output folders
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Optional: ignore specific large files
+*.zip
+*.tar
+*.rar
+*.exe
+
+# Ignore npm debug files
+npm-debug.log*
+
