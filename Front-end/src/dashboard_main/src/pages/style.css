@@ -1,0 +1,173 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('back.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  background-color: #1e2a38;
+}
+
+.auth-box {
+  background: rgba(15, 23, 42, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  border: 1px solid rgba(121, 192, 192, 0.2);
+  padding: 40px 30px;
+  width: 350px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-box::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(90deg, #bbd6d6, #1e2a38, #6faaaa);
+  background-size: 400% 400%;
+  animation: borderGlow 6s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.auth-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.auth-box label {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #00ffff;
+  margin-bottom: 5px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.auth-box input:focus {
+  border-bottom: 2px solid #00ffff;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00ffff;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-box button:hover {
+  background-color: #00e0e0;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logout-btn,
+.home-btn{
+  background-color: #00ffff;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.logout-btn:hover,
+.home-btn:hover {
+  background-color: #00e0e0;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+.homepage-container {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.top-bar {
+  background-color: #00ffff;
+  padding: 5px 20px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.login-link {
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+}
+
+.apply-btn {
+  background-color:#00ffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  color: rgb(30, 30, 30);
+  cursor: pointer;
+}
