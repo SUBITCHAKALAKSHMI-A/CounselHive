@@ -7,9 +7,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node modules (huge folder)
+node_modules/
+
+# Build/output folders
+dist/
+dist-ssr/
+build/
+
+# Local files
 *.local
 
 # Editor directories and files
@@ -23,18 +29,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Node modules (huge folder)
-node_modules/
-
-# Log files
-*.log
-
-# Build/output folders
-dist/
-build/
-
 # OS files
-.DS_Store
 Thumbs.db
 
 # Environment files
@@ -49,7 +44,3 @@ Thumbs.db
 *.tar
 *.rar
 *.exe
-
-# Ignore npm debug files
-npm-debug.log*
-
