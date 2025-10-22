@@ -44,3 +44,6 @@ Thumbs.db
 *.tar
 *.rar
 *.exe
+
+*.pkl
+
