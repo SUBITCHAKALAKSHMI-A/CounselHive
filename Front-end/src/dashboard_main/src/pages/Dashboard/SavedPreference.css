@@ -1,0 +1,241 @@
+.saved-preferences-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.saved-preferences-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.saved-preferences-header h1 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.saved-preferences-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.saved-preferences-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* Saved Preferences Card */
+.saved-preferences-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e5e9;
+  width: 100%;
+  max-width: 700px;
+}
+
+.preferences-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.refresh-btn, .clear-all-btn {
+  padding: 12px 20px;
+  border: 2px solid #e1e5e9;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.refresh-btn {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.refresh-btn:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.clear-all-btn {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.clear-all-btn:hover {
+  background: #e74c3c;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #7f8c8d;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Saved Preferences List */
+.saved-preferences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.saved-preference-item {
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 24px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.saved-preference-item:hover {
+  border-color: #3498db;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);
+  transform: translateY(-2px);
+}
+
+.preference-main-info h3 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.preference-main-info p {
+  margin: 0;
+  color: #34495e;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.preference-details {
+  margin: 16px 0;
+  padding: 0;
+}
+
+.pref-detail {
+  color: #2c3e50;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.pref-detail strong {
+  color: #2c3e50;
+}
+
+.preference-meta {
+  margin-bottom: 20px;
+}
+
+.save-date {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.preference-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.apply-btn, .delete-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.apply-btn {
+  background: #27ae60;
+  color: white;
+  border: 2px solid #27ae60;
+}
+
+.apply-btn:hover {
+  background: #219a52;
+  border-color: #219a52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: 2px solid #e74c3c;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+  border-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .saved-preferences-container {
+    padding: 15px;
+  }
+  
+  .saved-preferences-card {
+    padding: 24px;
+  }
+  
+  .preferences-controls {
+    flex-direction: column;
+  }
+  
+  .preference-actions {
+    flex-direction: column;
+  }
+  
+  .saved-preferences-header h1 {
+    font-size: 1.8rem;
+  }
+}
