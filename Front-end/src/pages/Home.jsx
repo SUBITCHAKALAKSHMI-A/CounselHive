@@ -67,7 +67,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prev => prev === images.length - 1 ? 0 : prev + 1);
-    }, 1000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -215,7 +215,7 @@ const Home = () => {
                       <option value="BC">BC</option>
                       <option value="MBC">MBC</option>
                       <option value="SC">SC</option>
-                      
+                      <option value="ST">ST</option>
                     </select>
                   </div>
                   <div className="col-md-3">
