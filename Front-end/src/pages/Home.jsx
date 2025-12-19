@@ -215,7 +215,7 @@ const Home = () => {
                       <option value="BC">BC</option>
                       <option value="MBC">MBC</option>
                       <option value="SC">SC</option>
-                      <option value="ST">ST</option>
+                      
                     </select>
                   </div>
                   <div className="col-md-3">
